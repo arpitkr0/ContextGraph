@@ -1,0 +1,5 @@
+team_name,contact,description
+Data Platform,data-platform@example.com,Owns core warehouse models
+Finance Analytics,finance-data@example.com,Owns revenue and payments metrics
+ML Platform,ml-platform@example.com,Owns model features and ML datasets
+Marketing Analytics,marketing-data@example.com,Owns campaign reporting

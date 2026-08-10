@@ -1,0 +1,4 @@
+term,definition,domain,owner,maps_to_asset
+Revenue,Net recognized revenue excluding refunds and failed payments,Finance,Finance Analytics,daily_revenue
+Customer,A person or account with a canonical row in the customer profile table,Core,Data Platform,customers
+Churn Risk,Estimated likelihood that an active customer will stop using the product,Growth,ML Platform,churn_features

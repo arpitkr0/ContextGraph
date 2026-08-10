@@ -1,0 +1,5 @@
+source_asset,source_column,target_asset,target_column
+customers,customer_id,orders,customer_id
+orders,customer_id,daily_revenue,customer_id
+customers,customer_id,customer_360,customer_id
+customer_360,customer_id,churn_features,customer_id

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What tables feed the revenue dashboard?",
+    "must_contain": ["daily_revenue", "orders", "customers"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "What could break if I change customers.customer_id?",
+    "must_contain": ["revenue_dashboard", "customer_dashboard", "customer_churn_model"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "Can I trust churn_features?",
+    "must_contain": ["not certified", "PII", "ML Platform"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "What does Revenue mean?",
+    "must_contain": ["Net recognized revenue", "Finance"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "Which PII tables feed the revenue dashboard?",
+    "must_contain": ["customers"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "What feeds unknown_dashboard?",
+    "must_contain": ["cannot reliably"],
+    "expected_confidence": "LOW"
+  },
+  {
+    "question": "What feeds customer_churn_model?",
+    "must_contain": ["churn_features"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "What does Churn Risk mean?",
+    "must_contain": ["likelihood", "Growth", "ML Platform"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "Can I trust customer_dashboard?",
+    "must_contain": ["certified", "owned by"],
+    "expected_confidence": "HIGH"
+  },
+  {
+    "question": "Find a dataset for products",
+    "must_contain": ["products", "Relevant assets"],
+    "expected_confidence": "HIGH"
+  }
+]

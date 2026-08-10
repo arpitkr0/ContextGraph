@@ -1,0 +1,23 @@
+name,type,owner,description,certified,freshness,columns,sensitivity
+customers,Table,Data Platform,Canonical customer profile table,true,1 hour,customer_id|email|signup_date|country|segment,PII
+orders,Table,Commerce Analytics,Customer order transactions,true,2 hours,order_id|customer_id|amount|created_at|status,INTERNAL
+order_items,Table,Commerce Analytics,Line items for each order,true,2 hours,order_id|product_id|quantity|unit_price,INTERNAL
+products,Table,Catalog Team,Product catalog,true,1 day,product_id|sku|category|price,PUBLIC
+payments,Table,Finance Analytics,Payment events and settlement status,true,2 hours,payment_id|order_id|amount|payment_status,CONFIDENTIAL
+subscriptions,Table,Growth Analytics,Subscription lifecycle data,false,6 hours,subscription_id|customer_id|plan|status,PII
+web_events,Table,Product Analytics,Website behavioral events,false,15 minutes,event_id|customer_id|event_name|event_time,PII
+support_tickets,Table,Support Ops,Customer support ticket history,true,4 hours,ticket_id|customer_id|topic|priority,PII
+daily_revenue,Table,Finance Analytics,Daily recognized revenue by customer,true,2 hours,date|customer_id|gross_revenue|net_revenue,INTERNAL
+monthly_revenue,Table,Finance Analytics,Monthly rollup of recognized revenue,true,1 day,month|net_revenue|customer_count,INTERNAL
+customer_360,Table,Data Platform,Joined customer profile and lifecycle view,true,3 hours,customer_id|segment|lifetime_value|last_order_at,PII
+customer_features,Table,ML Platform,Feature table for customer models,true,6 hours,customer_id|orders_30d|visits_30d|tickets_30d,PII
+churn_features,Table,ML Platform,Churn model training features,false,12 hours,customer_id|tenure_days|support_count|usage_drop,PII
+marketing_attribution,Table,Marketing Analytics,Campaign touchpoints mapped to customers,false,1 day,customer_id|campaign_id|channel|touch_time,PII
+campaign_performance,Table,Marketing Analytics,Campaign performance rollups,true,1 day,campaign_id|spend|conversions|revenue,INTERNAL
+inventory_snapshot,Table,Supply Chain,Current inventory by SKU,true,1 hour,sku|warehouse|quantity|updated_at,INTERNAL
+refunds,Table,Finance Analytics,Refund events by order,true,4 hours,refund_id|order_id|amount|reason,CONFIDENTIAL
+revenue_dashboard,Dashboard,Finance Analytics,Executive revenue performance dashboard,true,2 hours,,INTERNAL
+customer_dashboard,Dashboard,CX Analytics,Customer health and lifecycle dashboard,true,3 hours,,INTERNAL
+marketing_dashboard,Dashboard,Marketing Analytics,Campaign and attribution dashboard,false,1 day,,INTERNAL
+ops_dashboard,Dashboard,Operations,Inventory and fulfillment dashboard,true,1 hour,,INTERNAL
+support_dashboard,Dashboard,Support Ops,Support ticket trends dashboard,true,4 hours,,INTERNAL

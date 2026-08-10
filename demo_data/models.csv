@@ -1,0 +1,3 @@
+name,owner,trained_on,description,certified,freshness,sensitivity
+customer_churn_model,ML Platform,churn_features,Predicts customer churn risk,true,1 day,PII
+revenue_forecast_model,Finance Analytics,monthly_revenue,Forecasts next-quarter revenue,true,1 day,INTERNAL
