@@ -67,7 +67,6 @@ uvicorn backend.api:app --reload
 - `POST /reset-demo`
 - `GET /graph/status`
 - `GET /graph/full`
-- `GET /health`
 
 ## Notes
 
